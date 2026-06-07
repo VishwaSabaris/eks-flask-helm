@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: 437158669342.dkr.ecr.ap-south-1.amazonaws.com/flask-ecs-app
-  tag: latest
+  tag: b6713e7
 
 service:
   type: LoadBalancer
