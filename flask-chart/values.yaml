@@ -1,0 +1,30 @@
+replicaCount: 1
+
+image:
+  repository: 437158669342.dkr.ecr.ap-south-1.amazonaws.com/flask-ecs-app
+  tag: latest
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 5000
+
+mysql:
+  host: eks-mysql-db.cj0qg26esclk.ap-south-1.rds.amazonaws.com
+  user: admin
+  password: Admin12345!
+  database: studentdb
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "128Mi"
+  limits:
+    cpu: "500m"
+    memory: "256Mi"
+
+hpa:
+  enabled: false
+  minReplicas: 2
+  maxReplicas: 10
+  cpuUtilization: 50
