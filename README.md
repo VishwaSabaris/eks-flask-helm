@@ -29,13 +29,13 @@ The application is packaged using Docker, deployed using Kubernetes manifests, m
 
 ## Architecture Diagram
 
-![Architecture](docs/architecture.png)
+![Architecture](architecture.png)
 
 ---
 
 ## CI/CD Workflow Diagram
 
-![Workflow](docs/workflow.png)
+![Workflow](workflow.png)
 
 ---
 
